@@ -14,7 +14,7 @@ import theme from "./theme";
 
 const ethermintChain: Chain = {
   id: 2061,
-  name: 'Polaris EVM x Rollkit',
+  name: 'EVM x Rollkit',
   network: 'berakit',
   nativeCurrency: {
     decimals: 18,

@@ -677,16 +677,16 @@
                         "src": "523:61:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_33848db2808c18f6a63d9c88828274f78059920386bbea4f2003d8ec58f2684c",
-                          "typeString": "literal_string \"i am a smart contract on Polaris EVM x Rollkit. ooga booga!\""
+                          "typeString": "literal_string \"i am a smart contract on EVM x Rollkit. ooga booga!\""
                         },
-                        "value": "i am a smart contract on Polaris EVM x Rollkit. ooga booga!"
+                        "value": "i am a smart contract on EVM x Rollkit. ooga booga!"
                       }
                     ],
                     "expression": {
                       "argumentTypes": [
                         {
                           "typeIdentifier": "t_stringliteral_33848db2808c18f6a63d9c88828274f78059920386bbea4f2003d8ec58f2684c",
-                          "typeString": "literal_string \"i am a smart contract on Polaris EVM x Rollkit. ooga booga!\""
+                          "typeString": "literal_string \"i am a smart contract on EVM x Rollkit. ooga booga!\""
                         }
                       ],
                       "expression": {

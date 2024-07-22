@@ -1,7 +1,5 @@
 # ooga booga portal ☀️
 
-This is the branch for the Polaris x Rollkit EVM "ooga booga portal" previously seen on Bubs testnet as the [gm portal](https://gmportal.xyz).
-
 Contracts can be found in the [`contracts`](./contracts) directory, and the frontend in [`frontend`](./frontend).
 
 ## What is GM?
@@ -12,18 +10,14 @@ GM means good morning. It's GM o'clock somewhere, so there's never a bad time to
 
 ooga booga 🐻🍯
 
-## Getting Started
-
-First, follow the [Rollkit tutorial](https://rollkit.dev/tutorials/polaris-evm).
-
 ## Developing this site yourself
 
 ```sh
 # clone the repository
-git clone https://github.com/jcstein/gm-portal.git
+git clone https://github.com/rollkit/gm-portal.git
 
 # CD into directory, and frontend
-cd gm-portal && git checkout polaris
+cd gm-portal
 cd frontend
 
 # Install dependencies
@@ -40,6 +34,6 @@ and [Celestia's full stack modular blockchain development guide](https://docs.ce
 The smart contract on this dapp was deployed with Foundry. -->
 
 If you would like to contribute to this repository, please submit an
-[issue](https://github.com/jcstein/gm-portal/issues/new/choose) and
-open a [pull request](https://github.com/jcstein/gm-portal/compare)
+[issue](https://github.com/rollkit/gm-portal/issues/new/choose) and
+open a [pull request](https://github.com/rollkit/gm-portal/compare)
 with your changes for the issue.
