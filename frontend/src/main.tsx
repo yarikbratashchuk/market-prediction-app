@@ -13,13 +13,13 @@ import { ColorModeScript } from "@chakra-ui/react";
 import theme from "./theme";
 
 const ethermintChain: Chain = {
-  id: 2061,
+  id: 80087,
   name: 'EVM x Rollkit',
-  network: 'berakit',
+  network: 'rollkit',
   nativeCurrency: {
     decimals: 18,
-    name: 'Berakit',
-    symbol: 'tBERA',
+    name: 'Rollkit',
+    symbol: 'tRollkit',
   },
   rpcUrls: {
     default: {
@@ -69,3 +69,4 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
    </WagmiConfig>
   </React.StrictMode>,
 )
+
