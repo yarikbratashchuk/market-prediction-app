@@ -8,7 +8,7 @@ import { Heading, Flex, VStack, Button, HStack, Text, Link, Card, CardBody, Card
 import { Topbuttons } from "./Components/topbuttons";
 import './App.css'
 
-const contractAddress = '0x18Df82C7E422A42D47345Ed86B0E935E9718eBda'
+const contractAddress = '0x9fcEbD70654D360b41ccD123dADAAad6ce13C788'
 
 function App() {
   useEffect(() => {
@@ -28,7 +28,7 @@ function App() {
     }
   }, [address])
   const [errorMessage, setErrorMessage] = useState('')
-  
+
   async function getAllGms() {
     const provider = new ethers.providers.Web3Provider((window.ethereum as any))
     const contract = new ethers.Contract(contractAddress, GmPortal.abi, provider)

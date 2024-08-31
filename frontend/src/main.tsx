@@ -13,18 +13,25 @@ import { ColorModeScript } from "@chakra-ui/react";
 import theme from "./theme";
 
 const ethermintChain: Chain = {
-  id: 80087,
-  name: 'EVM x Rollkit',
-  network: 'rollkit',
+  id: 11820,
+  name: 'Artela EVM++ x Rollkit',
+  network: 'artela',
   nativeCurrency: {
     decimals: 18,
-    name: 'Rollkit',
-    symbol: 'tRollkit',
+    name: 'Artela',
+    symbol: 'ART',
   },
   rpcUrls: {
     default: {
       http: ['http://localhost:8545'],
       // webSocket: ['wss://bubs.calderachain.xyz/ws']
+    },
+  },
+  // FIXME: must add this to the chain config, otherwise network will fail to connect
+  blockExplorers: {
+    default: {
+      name: 'Artela Explorer',
+      url: 'https://betanet-scan.artela.network',
     },
   },
   testnet: true,
@@ -43,10 +50,7 @@ const connectors = connectorsForWallets([
   {
     groupName: 'Recommended',
     wallets: [
-      injectedWallet({ chains }),
       metaMaskWallet({ chains }),
-      walletConnectWallet({ chains }),
-      coinbaseWallet({ chains, appName: 'ooga booga portal' }),
     ],
   },
 ]);
