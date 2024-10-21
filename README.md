@@ -1,14 +1,6 @@
-# ooga booga portal ☀️
+# Prediction market ☀️
 
 Contracts can be found in the [`contracts`](./contracts) directory, and the frontend in [`frontend`](./frontend).
-
-## What is GM?
-
-GM means good morning. It's GM o'clock somewhere, so there's never a bad time to say GM, Gm, or gm.
-
-## What is ooga booga?
-
-ooga booga 🐻🍯
 
 ## Developing this site yourself
 
