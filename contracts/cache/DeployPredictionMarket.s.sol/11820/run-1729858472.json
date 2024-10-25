@@ -1,0 +1,25 @@
+{
+  "transactions": [
+    {
+      "rpc": "localhost:8545"
+    },
+    {
+      "rpc": "localhost:8545"
+    },
+    {
+      "rpc": "localhost:8545"
+    },
+    {
+      "rpc": "localhost:8545"
+    },
+    {
+      "rpc": "localhost:8545"
+    },
+    {
+      "rpc": "localhost:8545"
+    },
+    {
+      "rpc": "localhost:8545"
+    }
+  ]
+}
