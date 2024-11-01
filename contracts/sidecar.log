@@ -1,0 +1,44 @@
+{"level":"info","ts":"2024-11-01T11:17:58.937+0100","caller":"connect/main.go:337","msg":"successfully read in configs","pid":85040,"oracle_config_path":"","market_config_path":""}
+{"level":"info","ts":"2024-11-01T11:17:59.093+0100","caller":"connect/main.go:404","msg":"starting prometheus metrics","pid":85040,"address":"0.0.0.0:8002"}
+{"level":"error","ts":"2024-11-01T11:17:59.093+0100","caller":"connect/main.go:454","msg":"stopping server","pid":85040,"error":"listen tcp 0.0.0.0:8080: bind: address already in use"}
+{"level":"info","ts":"2024-11-01T11:17:59.093+0100","caller":"prometheus/server.go:74","msg":"prometheus server error","pid":85040,"server":"prometheus","error":"listen tcp 0.0.0.0:8002: bind: address already in use"}
+{"level":"info","ts":"2024-11-01T11:17:59.093+0100","caller":"oracle/lifecycle.go:16","msg":"starting oracle","pid":85040,"process":"oracle"}
+{"level":"info","ts":"2024-11-01T11:17:59.093+0100","caller":"oracle/lifecycle.go:80","msg":"stopping oracle","pid":85040,"process":"oracle"}
+{"level":"info","ts":"2024-11-01T11:17:59.093+0100","caller":"oracle/init.go:106","msg":"created polymarket_api provider state","pid":85040,"process":"oracle","provider":"polymarket_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.095+0100","caller":"oracle/init.go:106","msg":"created uniswapv3_api-ethereum provider state","pid":85040,"process":"oracle","provider":"uniswapv3_api-ethereum","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.095+0100","caller":"oracle/init.go:106","msg":"created huobi_ws provider state","pid":85040,"process":"oracle","provider":"huobi_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.095+0100","caller":"oracle/init.go:106","msg":"created uniswapv3_api-base provider state","pid":85040,"process":"oracle","provider":"uniswapv3_api-base","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.095+0100","caller":"oracle/init.go:106","msg":"created binance_api provider state","pid":85040,"process":"oracle","provider":"binance_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.095+0100","caller":"oracle/init.go:106","msg":"created okx_ws provider state","pid":85040,"process":"oracle","provider":"okx_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.095+0100","caller":"oracle/init.go:106","msg":"created raydium_api provider state","pid":85040,"process":"oracle","provider":"raydium_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.095+0100","caller":"oracle/init.go:106","msg":"created volatile-exchange-provider provider state","pid":85040,"process":"oracle","provider":"volatile-exchange-provider","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.095+0100","caller":"oracle/init.go:106","msg":"created coinmarketcap_api provider state","pid":85040,"process":"oracle","provider":"coinmarketcap_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created kucoin_ws provider state","pid":85040,"process":"oracle","provider":"kucoin_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created coinbase_api provider state","pid":85040,"process":"oracle","provider":"coinbase_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created binance_ws provider state","pid":85040,"process":"oracle","provider":"binance_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created kraken_api provider state","pid":85040,"process":"oracle","provider":"kraken_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created gate_ws provider state","pid":85040,"process":"oracle","provider":"gate_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created coinbase_ws provider state","pid":85040,"process":"oracle","provider":"coinbase_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:155","msg":"created market map provider","pid":85040,"process":"oracle","provider":"marketmap_api"}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created bybit_ws provider state","pid":85040,"process":"oracle","provider":"bybit_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created coingecko_api provider state","pid":85040,"process":"oracle","provider":"coingecko_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created kraken_ws provider state","pid":85040,"process":"oracle","provider":"kraken_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created bitstamp_ws provider state","pid":85040,"process":"oracle","provider":"bitstamp_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created crypto_dot_com_ws provider state","pid":85040,"process":"oracle","provider":"crypto_dot_com_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created bitfinex_ws provider state","pid":85040,"process":"oracle","provider":"bitfinex_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created bitstamp_api provider state","pid":85040,"process":"oracle","provider":"bitstamp_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created mexc_ws provider state","pid":85040,"process":"oracle","provider":"mexc_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/init.go:106","msg":"created osmosis_api provider state","pid":85040,"process":"oracle","provider":"osmosis_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:58","msg":"updating provider state","pid":85040,"process":"oracle","provider_state":"uniswapv3_api-ethereum"}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:73","msg":"updated uniswapv3_api-ethereum provider state","pid":85040,"process":"oracle","provider":"uniswapv3_api-ethereum","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:73","msg":"updated gate_ws provider state","pid":85040,"process":"oracle","provider":"gate_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:73","msg":"updated coinbase_ws provider state","pid":85040,"process":"oracle","provider":"coinbase_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:73","msg":"updated okx_ws provider state","pid":85040,"process":"oracle","provider":"okx_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:73","msg":"updated coinmarketcap_api provider state","pid":85040,"process":"oracle","provider":"coinmarketcap_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:73","msg":"updated coinbase_api provider state","pid":85040,"process":"oracle","provider":"coinbase_api","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:73","msg":"updated bitstamp_ws provider state","pid":85040,"process":"oracle","provider":"bitstamp_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/lifecycle.go:82","msg":"cancelling context","pid":85040,"process":"oracle"}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/lifecycle.go:86","msg":"waiting for routines to stop","pid":85040,"process":"oracle"}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/lifecycle.go:88","msg":"oracle exited successfully","pid":85040,"process":"oracle"}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"oracle/update.go:73","msg":"updated crypto_dot_com_ws provider state","pid":85040,"process":"oracle","provider":"crypto_dot_com_ws","num_tickers":0}
+{"level":"info","ts":"2024-11-01T11:17:59.096+0100","caller":"connect/main.go:415","msg":"stopping prometheus metrics","pid":85040}
