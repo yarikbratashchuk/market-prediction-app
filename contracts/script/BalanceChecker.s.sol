@@ -6,7 +6,7 @@ import "forge-std/console.sol";
 contract BalanceChecker is Script {
     function run() external {
         // Get the private key from the deployment script
-        uint256 privateKey = vm.envUint("PRIVATE_KEY");
+        uint256 privateKey = vm.envUint("USER_PRIVATE_KEY");
         address deployer = vm.addr(privateKey);
         
         // Check ETH balance
@@ -18,7 +18,7 @@ contract BalanceChecker is Script {
         console.log("ETH Balance (in ETH):", ethBalance / 1e18);
         
         // Calculate minimum required balance for deployment
-        uint256 estimatedGas = 2938305; // from your error message
+        uint256 estimatedGas = 2938305; // frm your error message
         uint256 gasPrice = 40000000001; // 40.000000001 gwei from your logs
         uint256 requiredWei = estimatedGas * gasPrice;
         

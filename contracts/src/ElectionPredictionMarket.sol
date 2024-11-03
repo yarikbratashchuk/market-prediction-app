@@ -9,7 +9,7 @@ contract ElectionPredictionMarket is ReentrancyGuard, Ownable {
     IERC20 public immutable betToken;
     
     // November 5, 2024, 23:59:59 UTC
-    uint256 public constant ELECTION_END_TIME = 1730073599;
+    uint256 public constant ELECTION_END_TIME = 1730764800;
     
     struct Market {
         string electionName;
@@ -87,37 +87,40 @@ contract ElectionPredictionMarket is ReentrancyGuard, Ownable {
         emit BetPlaced(msg.sender, _party, _amount);
     }
     
-    function resolveMarket() external onlyOwner {
+    function resolveMarket(uint8 _winner) external onlyOwner {
         require(block.timestamp >= ELECTION_END_TIME, "Election not ended");
         require(!electionMarket.isResolved, "Market already resolved");
         
-        // Determine winner based on final odds
-        uint8 winner = electionMarket.democratOdds > electionMarket.republicanOdds ? 0 : 1;
-        
         electionMarket.isResolved = true;
-        electionMarket.winner = winner;
+        electionMarket.winner = _winner;
         
-        emit MarketResolved(winner);
+        emit MarketResolved(_winner);
     }
     
     function claimWinnings() external nonReentrant {
         require(electionMarket.isResolved, "Market not resolved");
-        
+    
         uint256 totalWinnings = 0;
         Bet[] storage bets = userBets[msg.sender];
-        
+    
+        uint256 winningPool = electionMarket.partyPools[electionMarket.winner];
+        uint256 losingPool = electionMarket.totalPoolSize - winningPool;
+    
         for (uint256 i = 0; i < bets.length; i++) {
             if (!bets[i].claimed && bets[i].party == electionMarket.winner) {
-                uint256 winningPool = electionMarket.partyPools[electionMarket.winner];
-                uint256 winnings = (bets[i].amount * electionMarket.totalPoolSize) / winningPool;
+                // Calculate user's share of the losing pool based on their proportion of winning pool
+                uint256 winnerShare = (bets[i].amount * losingPool) / winningPool;
+                // Total winnings = original bet + share of losing pool
+                uint256 winnings = bets[i].amount + winnerShare;
+    
                 totalWinnings += winnings;
                 bets[i].claimed = true;
             }
         }
-        
+    
         require(totalWinnings > 0, "No winnings to claim");
         require(betToken.transfer(msg.sender, totalWinnings), "Token transfer failed");
-        
+    
         emit WinningsClaimed(msg.sender, totalWinnings);
     }
     
